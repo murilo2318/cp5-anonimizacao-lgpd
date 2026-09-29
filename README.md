@@ -12,7 +12,7 @@ Murilo Benhossi · RM 562358 · Tecnólogo em Inteligência Artificial · RPA ap
 ├── CP5_Anonimizacao_LGPD.ipynb  # pipeline completo + auditoria + governança
 ├── rotulagem_manual.json        # rotulagem manual de PII dos 40 ids públicos
 ├── casos_fora_do_conjunto.json  # 14 frases novas rotuladas (fonte dos casos de erro)
-├── auditoria_resultado.json     # gerado pelo notebook (seção 8.5)
+├── auditoria_resultado.json     # gerado pelo notebook (seção 8.6)
 ├── fiap_bank_cp5.db             # banco gerado pela execução (com fallback forçado)
 ├── data/manifestacoes_clientes_cp5.csv
 ├── tests/test_anonimizar_texto.py
