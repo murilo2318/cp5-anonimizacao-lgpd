@@ -1,0 +1,19 @@
+{
+ "_origem": "Frases escritas depois da funcao pronta, de proposito para testar formatos e contextos que nao aparecem no CSV publico. Nao fazem parte do conjunto publico. Servem como estimativa fora da amostra e como fonte de casos de erro reais (ver notebook, secao 8.5). Rotulagem com o mesmo criterio de rotulagem_manual.json.",
+ "casos": {
+  "extra_01": {"texto": "Estou falando com o Seu Jorge da agencia.", "rotulos": [{"tipo": "NOME", "texto": "Jorge"}]},
+  "extra_02": {"texto": "Pedi para a Dona Cida ligar.", "rotulos": [{"tipo": "NOME", "texto": "Cida"}]},
+  "extra_03": {"texto": "Grata, Silvia R.", "rotulos": [{"tipo": "NOME", "texto": "Silvia R"}]},
+  "extra_04": {"texto": "Att, Equipe Financeira", "rotulos": []},
+  "extra_05": {"texto": "Quero falar com o Senhor Responsavel pelo setor.", "rotulos": []},
+  "extra_06": {"texto": "Minha reclamacao tem o protocolo numero 2024-5.", "rotulos": []},
+  "extra_07": {"texto": "Meu nome e Joao, conta 1234, agencia 56.", "rotulos": [{"tipo": "NOME", "texto": "Joao"}, {"tipo": "CONTA", "texto": "1234"}, {"tipo": "CONTA", "texto": "56"}]},
+  "extra_08": {"texto": "Falei com o atendente marcos na terca.", "rotulos": [{"tipo": "NOME", "texto": "marcos"}]},
+  "extra_09": {"texto": "Olá, sou a Mariana Lopes, cliente há 10 anos. Meu CPF é 321.654.987-10.", "rotulos": [{"tipo": "NOME", "texto": "Mariana Lopes"}, {"tipo": "CPF", "texto": "321.654.987-10"}]},
+  "extra_10": {"texto": "Transfiram para a conta 00012345-6 ag 0987, titular joão da silva.", "rotulos": [{"tipo": "CONTA", "texto": "00012345-6"}, {"tipo": "CONTA", "texto": "0987"}, {"tipo": "NOME", "texto": "joão da silva"}]},
+  "extra_11": {"texto": "Fui na agencia Paulista e o caixa demorou.", "rotulos": []},
+  "extra_12": {"texto": "Paguei R$ 1.234,56 no dia 12/05/2024 e o cartão final 1234 foi recusado.", "rotulos": []},
+  "extra_13": {"texto": "RG nº 12.345.678-X, e-mail maria.souza@yahoo.com.br", "rotulos": [{"tipo": "RG", "texto": "12.345.678-X"}, {"tipo": "EMAIL", "texto": "maria.souza@yahoo.com.br"}]},
+  "extra_14": {"texto": "Sou cliente Itau Personnalite e quero migrar.", "rotulos": []}
+ }
+}

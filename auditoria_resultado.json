@@ -1,0 +1,41 @@
+{
+  "recall_estimado": 1.0,
+  "precisao_estimado": 1.0,
+  "casos_de_erro": [
+    {
+      "id": "extra_01",
+      "tipo_erro": "falso_negativo",
+      "descricao": "[Frase fora do conjunto publico, casos_fora_do_conjunto.json] Texto: Estou falando com o Seu Jorge da agencia. | Saida: Estou falando com o Seu Jorge da agencia. | A funcao deixou passar Jorge (NOME)."
+    },
+    {
+      "id": "extra_02",
+      "tipo_erro": "falso_negativo",
+      "descricao": "[Frase fora do conjunto publico, casos_fora_do_conjunto.json] Texto: Pedi para a Dona Cida ligar. | Saida: Pedi para a Dona Cida ligar. | A funcao deixou passar Cida (NOME)."
+    },
+    {
+      "id": "extra_03",
+      "tipo_erro": "falso_negativo",
+      "descricao": "[Frase fora do conjunto publico, casos_fora_do_conjunto.json] Texto: Grata, Silvia R. | Saida: Grata, [NOME] R. | A funcao deixou passar R (NOME)."
+    },
+    {
+      "id": "extra_04",
+      "tipo_erro": "falso_positivo",
+      "descricao": "[Frase fora do conjunto publico, casos_fora_do_conjunto.json] Texto: Att, Equipe Financeira | Saida: Att, [NOME] | A funcao mascarou por engano: Equipe, Financeira."
+    },
+    {
+      "id": "extra_05",
+      "tipo_erro": "falso_positivo",
+      "descricao": "[Frase fora do conjunto publico, casos_fora_do_conjunto.json] Texto: Quero falar com o Senhor Responsavel pelo setor. | Saida: Quero falar com o [NOME] pelo setor. | A funcao mascarou por engano: Senhor, Responsavel."
+    },
+    {
+      "id": "extra_06",
+      "tipo_erro": "falso_positivo",
+      "descricao": "[Frase fora do conjunto publico, casos_fora_do_conjunto.json] Texto: Minha reclamacao tem o protocolo numero 2024-5. | Saida: Minha reclamacao tem o protocolo numero [CONTA]. | A funcao mascarou por engano: 2024-5."
+    },
+    {
+      "id": "extra_07",
+      "tipo_erro": "falso_negativo",
+      "descricao": "[Frase fora do conjunto publico, casos_fora_do_conjunto.json] Texto: Meu nome e Joao, conta 1234, agencia 56. | Saida: Meu nome e [NOME], conta [CONTA], agencia 56. | A funcao deixou passar 56 (CONTA)."
+    }
+  ]
+}

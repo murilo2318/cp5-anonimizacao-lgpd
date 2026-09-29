@@ -11,6 +11,7 @@ Murilo Benhossi · RM 562358 · Tecnólogo em Inteligência Artificial · RPA ap
 ├── anonimizar_texto.py          # função com assinatura fixa (testada pelo professor)
 ├── CP5_Anonimizacao_LGPD.ipynb  # pipeline completo + auditoria + governança
 ├── rotulagem_manual.json        # rotulagem manual de PII dos 40 ids públicos
+├── casos_fora_do_conjunto.json  # 14 frases novas rotuladas (fonte dos casos de erro)
 ├── auditoria_resultado.json     # gerado pelo notebook (seção 8.5)
 ├── fiap_bank_cp5.db             # banco gerado pela execução (com fallback forçado)
 ├── data/manifestacoes_clientes_cp5.csv
@@ -54,3 +55,9 @@ SELECT provedor, COUNT(*) FROM manifestacoes GROUP BY provedor;
 ## Modelo do spaCy
 
 `anonimizar_texto.py` tenta, nesta ordem: variável `SPACY_MODEL`, `pt_core_news_lg`, `pt_core_news_md`, `pt_core_news_sm`. Se o spaCy não estiver instalado, a função não quebra: cai para regras de contexto e regex (qualidade menor para nomes).
+
+## Sobre os casos de erro da auditoria
+
+Nos 40 textos públicos e nos resumos gerados, a função não deixou passar nenhuma PII rotulada nem mascarou texto comum (recall e precisão medidos por token, tabela por id na seção 8.2 do notebook). O enunciado pede pelo menos 2 casos de erro reais, encontrados rodando a função. Para não inventar casos nem piorar a função de propósito, os casos de `auditoria_resultado.json` vêm de 14 frases novas (`casos_fora_do_conjunto.json`), escritas depois da função pronta e rotuladas com o mesmo critério. Esses casos usam ids `extra_NN`, para não serem confundidos com ids do conjunto público.
+
+`recall_estimado` e `precisao_estimado` continuam sendo os valores medidos no conjunto público, que é onde o professor calcula o desempenho real. O desempenho nas frases novas aparece separado na seção 8.5 do notebook, e a discussão de cada erro está no relatório (seção 8.7).
