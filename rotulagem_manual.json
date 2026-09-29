@@ -1,0 +1,178 @@
+{
+ "_criterio": "PII conforme secao 2 do enunciado: nome de pessoa (qualquer pessoa citada, inclusive atendente/gerente e primeiro nome isolado), CPF, RG, numero de conta e/ou agencia, e-mail. NAO sao PII aqui: final de cartao (4 digitos), valores, datas, telefone (fora da lista), nomes de produto (Pix), cidade. A palavra-chave que precede o numero ('CPF', 'conta', 'agencia') nao e PII, so o numero. Os 40 ids foram rotulados; ids sem PII ficam com lista vazia e contam para a precisao.",
+ "rotulos": {
+  "1": [],
+  "2": [],
+  "3": [
+   {
+    "tipo": "NOME",
+    "texto": "Carlos Eduardo Ferreira"
+   }
+  ],
+  "4": [
+   {
+    "tipo": "NOME",
+    "texto": "Bruno Salviano"
+   }
+  ],
+  "5": [
+   {
+    "tipo": "CPF",
+    "texto": "123.456.789-00"
+   }
+  ],
+  "6": [],
+  "7": [
+   {
+    "tipo": "NOME",
+    "texto": "Fernanda Albuquerque"
+   },
+   {
+    "tipo": "CPF",
+    "texto": "98765432100"
+   }
+  ],
+  "8": [
+   {
+    "tipo": "NOME",
+    "texto": "Julia Prado"
+   }
+  ],
+  "9": [],
+  "10": [],
+  "11": [
+   {
+    "tipo": "CONTA",
+    "texto": "45231-9"
+   },
+   {
+    "tipo": "CONTA",
+    "texto": "0021"
+   }
+  ],
+  "12": [],
+  "13": [
+   {
+    "tipo": "NOME",
+    "texto": "Maria da Silva Nogueira"
+   }
+  ],
+  "14": [
+   {
+    "tipo": "EMAIL",
+    "texto": "joao.pereira@gmail.com"
+   }
+  ],
+  "15": [],
+  "16": [],
+  "17": [
+   {
+    "tipo": "RG",
+    "texto": "34.567.890-1"
+   }
+  ],
+  "18": [
+   {
+    "tipo": "NOME",
+    "texto": "rafael tavares moreira"
+   }
+  ],
+  "19": [],
+  "20": [],
+  "21": [
+   {
+    "tipo": "EMAIL",
+    "texto": "ana_costa99@hotmail.com"
+   }
+  ],
+  "22": [
+   {
+    "tipo": "CONTA",
+    "texto": "778821-4"
+   }
+  ],
+  "23": [],
+  "24": [],
+  "25": [
+   {
+    "tipo": "NOME",
+    "texto": "Patricia Yumi Sakamoto"
+   }
+  ],
+  "26": [],
+  "27": [
+   {
+    "tipo": "CPF",
+    "texto": "111.222.333-44"
+   }
+  ],
+  "28": [],
+  "29": [
+   {
+    "tipo": "RG",
+    "texto": "501987654"
+   }
+  ],
+  "30": [],
+  "31": [
+   {
+    "tipo": "NOME",
+    "texto": "pedro henrique de castro"
+   }
+  ],
+  "32": [
+   {
+    "tipo": "CONTA",
+    "texto": "1123"
+   },
+   {
+    "tipo": "CONTA",
+    "texto": "998877-2"
+   }
+  ],
+  "33": [],
+  "34": [
+   {
+    "tipo": "NOME",
+    "texto": "Thiago Bezerra Lins"
+   },
+   {
+    "tipo": "EMAIL",
+    "texto": "thiago.lins@empresa.com.br"
+   }
+  ],
+  "35": [],
+  "36": [
+   {
+    "tipo": "NOME",
+    "texto": "Camila"
+   }
+  ],
+  "37": [
+   {
+    "tipo": "NOME",
+    "texto": "gustavo lima araujo"
+   },
+   {
+    "tipo": "CPF",
+    "texto": "22233344455"
+   }
+  ],
+  "38": [],
+  "39": [
+   {
+    "tipo": "NOME",
+    "texto": "Beatriz Cristina Monteiro"
+   },
+   {
+    "tipo": "RG",
+    "texto": "12345678"
+   },
+   {
+    "tipo": "CONTA",
+    "texto": "33445-5"
+   }
+  ],
+  "40": []
+ }
+}
