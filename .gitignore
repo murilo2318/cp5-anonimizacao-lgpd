@@ -1,0 +1,20 @@
+# Chaves de API e configuracao local: NUNCA commitar
+.env
+.env.*
+!.env.example
+*.key
+secrets.json
+config_local.py
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Mac
+.DS_Store
+
+# Saida que pode ser regenerada (a exportacao sai do banco)
+exportacao_consultoria.csv
